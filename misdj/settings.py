@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'note', # Amy, 加這一行
+    'import_export',
 ]
 
 MIDDLEWARE = [
