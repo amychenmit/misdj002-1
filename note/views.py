@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Note
+def index(request):
+    list = Note.objects.all()
+    context = {'list': list}
+    return render(request, 'note/index.html', context)
